@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>shopping List</title>
+</head>
+<body>
+    <div>
+    <h1>Shopping List</h1>
+
+    <p id="first"> Heute erledigen</p>
+</div>
+    <div>
+    <input id="userInput" type="text" placeholder="Gib deine Sachen ein">
+
+    <button id="enter">Hier</button>
+</div>
+
+
+    <ul class="ul">
+    
+        <li id="item0" class="done">Tomaten <button class="btn">X</button> <hr></li>
+       
+        <li id="item1" class="done">Spinat <button class="btn" >X</button><hr></li >
+            
+        <li id="item2" class="done">Reis<button class="btn">X</button> <hr></li >
+           
+        <li id="item3" class="done">Gurken<button class="btn">X</button>  <hr></li >
+          
+        <li id="item4" class="done">Kartoffeln <button class="btn">X</button> <hr></li>
+       
+
+
+
+
+    </ul>
+    <button class="open">Nach Essen Suchen API</button>
+    <dialog class="modal">
+
+        <input id="search" type="text" placeholder="Produkt Beispiel abfragen">
+        <button id="enter">Hier</button>
+        <button class="close-btn">schließen</button>
+    </dialog>
+    <div>
+    
+        <h3></h3>
+    
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
