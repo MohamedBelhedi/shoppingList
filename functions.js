@@ -134,7 +134,36 @@ let nutri_api={
   let search=document.getElementById("search")
   let query=search.value
   
-  
+
+  let button3=document.getElementById("enter2")
+  button3.addEventListener("click",()=>{
+
+    if(searchInput()>0){
+        
+      fetch(`${nutri_api.base}${query}`)
+      .then(res=>res.json())
+      .then(result=>{
+       
+        console.log(result.hits)
+        let query=search.value
+        let suche=nutri_api.base+query
+        let robopage="https://robohash.org/${query}"
+        var sting=suche.toString();
+        h3.innerHTML=`<a>${sting}</a>`+"<h3>Link kopieren</h3>"
+        var x=document.createElement("IMG")
+        x.setAttribute("src",robopage)
+        document.body.appendChild(x)
+        
+        
+      
+      });
+      search.value=""
+      
+    }
+
+
+
+  })
   search.addEventListener("keypress",(event)=>{
     
   
